@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stories for Kids</title>
+<link rel="stylesheet" href="Csss.css"> 
+<link rel="stylesheet" href="video.css"> 
+  </head>
+  <body>
+<ul class"nvbar-nav">
+  
+  <li><a href="Story.html">Home</a></li>
+  <li><a href="Books.html">Books</a>
+<li><a href="Video.html">Videos</a></li>
+  <li><a href="contact.html">Contact</a></li>
+
+  <li style="float:right"><a class="active" href="business.html">About</a></li>
+</ul>
+    <h3 class="heading">Story  gallery</h3>
+    <div class="container">
+      <div class="main-video">
+        <div class="video">
+          <video src="Fox.mp4" controls muted autoplay></video>
+          <h3 class="title">01.Fox and Grapes</h3>
+        </div>
+      </div>
+      <div class="video-list">
+        <div class="vid  active">
+          <video src="Fox.mp4" muted></video>
+          <h3 class="title">01.Fox and Grapes</h3>
+        </div>
+
+        <div class="vid">
+          <video src="Goose.mp4" muted></video>
+          <h3 class="title">02.The Golden Egg</h3>
+        </div>
+        <div class="vid">
+          <video src="mouse.mp4" muted></video>
+          <h3 class="title">03.The Lion And Mouse</h3>
+        </div>
+       <div class="vid">
+          <video src="four.mp4" muted></video>
+          <h3 class="title">04.Four Friends</h3>
+        </div>
+       <div class="vid">
+          <video src="crow.mp4" muted></video>
+          <h3 class="title">05.The Thirsty Crow</h3>
+        </div>
+       <div class="vid">
+          <video src="pot.mp4" muted></video>
+          <h3 class="title">06.Two Pots</h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      let listVideo = document.querySelectorAll(".video-list .vid");
+      let mainVideo = document.querySelector(".main-video  video");
+      let title = document.querySelector(".main-video  .title");
+      listVideo.forEach((video) => {
+        video.onclick = () => {
+          listVideo.forEach((vid) => vid.classList.remove("active"));
+video.classList.add("active");
+          if (video.classList.contains("active")) {
+            let src = video.children[0].getAttribute("src");
+            mainVideo.src = src;
+            let text=video.children[1].innerHTML;
+           title.innerHTML=text;
+          };
+        };
+      });
+    </script>
+  </body>
+</html>

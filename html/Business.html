@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <title>Stories for kids</title>
+<style>
+.nav .active {
+  background-color: #00A300;;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+}
+
+#nav-bar{
+position:sticky;
+top:0;
+z-index:50;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ .nav li a:hover {
+  background-color: #111;
+}
+
+.card {
+    position: relative;
+    height: 460px;
+    width: 300px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    position: absolute;
+    height: 220px;
+    width: 95%;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    top: -30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to right, #00A300, #00D100);
+}
+
+.header img {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    left: 90px;
+    top: 22px;
+}
+
+.header h3 {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    top: 118px;
+    left: 90px;
+}
+
+.header p {
+    position: absolute;
+    font-family: sans-serif;
+    color: rgb(236, 233, 233);
+    font-size: 13px;
+    top: 166px;
+    left: 90px
+}
+.bodys {
+    position: absolute;
+    height: 126px;
+    left: 5px;
+    right: 5px;
+    top: 52%;
+    border-radius: 12px;
+}
+
+.bodys ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    
+}
+
+.bodys ul li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.bodys ul li p,
+h3,
+i {
+    position: absolute;
+}
+
+.bodys ul li h3 {
+    top: -17px;
+    left: 58px;
+    color: #00A300;
+    
+}
+
+.bodys ul li p {
+    top: 14px;
+    left: 59px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #00A300;
+}
+
+.bodys ul li i {
+    left: 8px;
+    top: 7px;
+    color:#00A300;
+    font-size: 26px;
+}
+
+.bodys ul li:nth-child(1) {
+    top: -16px;
+}
+
+.bodys ul li:nth-child(2) {
+    top: 26px;
+}
+
+.bodys ul li:nth-child(3) {
+    top: 68px;
+}
+
+.bodys ul li:nth-child(1) i {
+    left: 12px;
+}
+
+.bodys li:hover {
+    background-color:#00A300;
+    cursor: pointer;
+}
+
+.bodys li:hover i{color:#fff}
+.bodys li:hover h3{color:#fff}
+.bodys li:hover p{color:#fff}
+/*footer*/
+
+.footer {
+    position: absolute;
+    height: 80px;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    width:95%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to right, #00A300, #00D100);
+}
+
+.footer ul {
+    position: absolute;
+    left: -60px;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.footer ul li i {
+    font-size: 30px;
+    color: #000;
+    transition: all .3s ease-in;
+}
+
+    
+.footer ul li:hover i {
+    transform: scale(0.9);
+    color: #fff;
+    cursor: pointer;
+}
+.credit a{
+    text-decoration: none;
+    color: #fff;
+    
+  }
+
+  .credit{
+    text-align: center;
+  }
+
+
+}
+</style>
+
+</head>
+<body>
+<div class="nav">
+<ul class="navbar-nav">
+  
+  <li><a href="Story.html">Home</a></li>
+  <li><a href="Books.html">Books</a></li>
+
+<li><a href="Video.html">Videos</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+</div>
+    <div class="card">
+        <div class="header">
+            <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__480.png">
+            <h3>Snehal Koli</h3>
+            <p>Web  Developer</p>
+        </div>
+        <div class="bodys">
+            <ul>
+                <li>
+                    <h3>5-555-666-777</h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3>example@gmail.com</h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3>www.example.com</h3>
+                    <p>Website address</p>
+                    <i class="fas fa-globe-americas"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
